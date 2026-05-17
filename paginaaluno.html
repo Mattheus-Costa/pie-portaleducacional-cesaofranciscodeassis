@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <link rel="stylesheet" href="stylealuno.css">
+    <title>Página do Aluno</title>
+</head>
+<body>
+
+    <header>
+         <section class="cabecalho"> 
+      <section class="imagelogo">
+            <img src="img/logo.png" alt="logo">
+      </section>
+
+            <h2>C.E. SÃO FRANCISCO DE ASSIS</h2>
+                <nav>
+                <a href="index.html" class="btn btn-outline-primary btn-voltar">Voltar</a>
+     
+                </nav>
+    </header>
+       
+    <main>
+
+        <section class="container-grid">
+
+             <section  class="card disciplinas">
+
+                   <h2 id="disciplinas" class="titulo-disciplina">DISCIPLINAS</h2>
+                 <div class="card card-disc"> 
+          
+                     <h3>MATEMÁTICA</h3>
+                     <p>Tutor: Professor 1</p>
+                     <a href="#mat" onclick="mostrar('matematica')" class="btn btn-outline-primary btn-postagem">Mostras Postagens</a>
+
+                 </div>
+
+                 <div class="card card-disc"> 
+
+                     <h3>LINGUA PORTUGUESA</h3>
+                     <p>Tutor: Professor 2</p>
+                     <a href="#port" onclick="mostrar('portugues')" class="btn btn-outline-primary btn-postagem">Mostrar Postagens</a>
+
+                 </div>
+
+                 <div class="card card-disc"> 
+       
+                    <h3>CIÊNCIAS</h3>
+                    <p>Tutor: Professor 3</p>
+                    <a href="#cienc" onclick="mostrar('ciencias')" class="btn btn-outline-primary btn-postagem">Mostrar Postagens</a>
+
+                 </div>
+             </section>
+                
+          
+
+
+              <section id="posts" class="conteudo">
+
+                <div class="conteudo-box">
+                    
+                      <h2 id="disciplina" class="titulo">SELECIONE UMA DISCIPLINA</h2>
+
+                <div id="area-content"></div>
+
+                </div>
+
+
+              <div id="modal-enviar-mat" class="enviar-modal">
+                <div class="modal-conteudo-enviar">
+                    <span class="fechar" onclick="fecharMat()">&times;</span>
+                    <h2>ENVIE SUAS ATIVIDADES</h2>
+                    <input class="input-custom-aluno" type="file">
+                     <a class="btn btn-outline-primary btn-enviar-atv">Enviar</a>
+                </div>
+
+                    </div>
+
+                     <div id="modal-enviar-port" class="enviar-modal">
+                <div class="modal-conteudo-enviar">
+                    <span class="fechar" onclick="fecharPort()">&times;</span>
+                    <h2>ENVIE SUAS ATIVIDADES</h2>
+                    <input class="input-custom-aluno" type="file">
+                     <a class="btn btn-outline-primary btn-enviar-atv">Enviar</a>
+                </div>
+
+                    </div>
+
+                     <div id="modal-enviar-cien" class="enviar-modal">
+                <div class="modal-conteudo-enviar">
+                    <span class="fechar" onclick="fecharCien()">&times;</span>
+                    <h2>ENVIE SUAS ATIVIDADES</h2>
+                    <input class="input-custom-aluno" type="file">
+                 <a  class="btn btn-outline-primary btn-enviar-atv">Enviar</a>
+                </div>
+
+                    </div>
+
+
+              </section>
+
+
+        
+
+        </section>
+  
+ 
+    </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <script src="scriptaluno.js"></script>
+</body>
+</html>

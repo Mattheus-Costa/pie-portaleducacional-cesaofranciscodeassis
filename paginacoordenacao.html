@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="stylecoordenacao.css" >
+    <title>Página da Coordenação</title>
+</head>
+<body>
+      <header>
+         <section class="cabecalho"> 
+      <section class="imagelogo">
+            <img src="img/logo.png" alt="logo">
+      </section>
+
+            <h2>C.E. SÃO FRANCISCO DE ASSIS</h2>
+                <nav>
+                <a href="index.html" class="btn btn-outline-primary btn-voltar">Voltar</a>
+                </nav>
+    </header>
+
+    <main>
+        <section class="container-grid">
+        <section class="coluna1">
+ <section class="adc-noticia">
+    <div class="card card-criar-news">
+          <h2 class="titulo">CRIAR NOVA POSTAGEM DE NOTÍCIA</h2>
+                <div class="card card-adc-news">
+                 <a onclick="abrirNot()" class="btn btn-outline-primary btn-adc-news">+</a>
+                </div>
+    </div>
+
+    <div class="card card-criar-curso">
+          <h2 class="titulo">CRIAR NOVA POSTAGEM DE CURSO</h2>
+                <div class="card card-adc-curso">
+                 <a onclick="AbrirCurso()"  class="btn btn-outline-primary btn-adc-curso">+</a>
+                </div>
+    </div>
+
+    <div id="modal-enviar-curso" class="enviar-curso-modal">
+        <div class="modal-conteudo-enviar-curso">
+            <span class="fechar-curso" onclick="fecharCurso()">&times;</span>
+            <h2>POSTE UM NOVO CURSO</h2>
+               <h2>IMAGEM:</h2>
+               <input type="file">
+               <h2>TÍTULO</h2>
+               <input class="input-custom-cord" placeholder="Título" type="text">
+               <h2>DESCRIÇÃO BREVE</h2>
+               <input class="input-custom-cord" placeholder="Descrição Breve" type="text">
+               <h2>DESCRIÇÃO COMPLETA</h2>
+               <input class="input-custom-cord-desc" placeholder="Descrição Completa" type="text"> 
+               <a  class="btn btn-outline-primary btn-enviar-not">Enviar</a>
+        </div>
+    </div>
+          
+
+     
+                      <div id="modal-enviar-not" class="enviar-not-modal">
+                <div class="modal-conteudo-enviar-not">
+                    <span class="fechar" onclick="fecharNot()">&times;</span>
+                    <h2>POSTE UMA NOVA NOTÍCIA</h2>
+
+                    
+                    <h2>IMAGEM:</h2>
+                    <input type="file">
+                    <h2>TÍTULO</h2>
+                    <input class="input-custom-cord" placeholder="Título" type="text">
+                    <h2>DESCRIÇÃO BREVE</h2>
+                    <input class="input-custom-cord" placeholder="Descrição Breve" type="text">
+                    <h2>DESCRIÇÃO COMPLETA</h2>
+                    <input class="input-custom-cord-desc" placeholder="Descrição Completa" type="text"> 
+                    <a  class="btn btn-outline-primary btn-enviar-not">Enviar</a>
+
+                </div>
+
+            </section>
+     
+
+        </section>
+           
+        <section class="coluna2">
+
+                  <section class="adc-doacao">
+            <div class="card card-criar-doa">
+                      <h2 class="titulo">CRIAR NOVA POSTAGEM DE DOAÇÃO</h2>
+                <div class="card card-adc">
+                <a onclick="abrirDoa()" class="btn btn-outline-primary btn-adc">+</a>
+                </div>
+
+            </div>
+      
+           
+
+                      <div id="modal-enviar-doa" class="enviar-doa-modal">
+                <div class="modal-conteudo-enviar-doa">
+                    <span class="fechar-doa" onclick="fecharDoa()">&times;</span>
+                    <h2>POSTE UM NOVO PEDIDO DE DOAÇÃO</h2>
+
+           
+                    <h2>TÍTULO</h2>
+                    <input class="input-custom-cord" placeholder="Título" type="text">
+                    <h2>DATA</h2>
+                    <input class="input-custom-cord" placeholder="Título" type="text">
+                    <h2>DESCRIÇÃO COMPLETA</h2>
+                    <input class="input-custom-cord-desc" placeholder="Descrição Completa" type="text" >
+                    <a  class="btn btn-outline-primary btn-enviar-doa">Enviar</a>
+
+                </div>
+
+            </section>
+          
+            <section class="doa-atend">
+           
+            <section class="card content">
+            <h2 class="titulo">DOAÇÕES ATENDIDAS</h2>
+               <div class="card card-doa-atend">
+                 <h3>Canetas e Lápis</h3>
+                 <p>Autor da Doação: Nome do Doador</p>
+                 <p>Data e Horário Escolhido: 12/12/2026 12:12</p>
+                 <a onclick="abrirPediLapis()" class="btn btn-outline-primary btn-saiba">Mais Informações</a>
+                </div>
+
+                  <div id="modal-pedido-doa-lapis" class="pedido-doa-modal">
+                     <div class="modal-conteudo-pedido-doa">
+                    <span class="fechar" onclick="fecharAtenLapis()">&times;</span>
+                    <h2>INFORMAÇÕES DO PEDIDO ATENDIDO</h2>
+                    <h3>NOME DO DOADOR</h3>
+                    <p>Nome do Doador</p>
+                    <h3>MATERIAL DOADO</h3>
+                    <p>Canetas e Lápis</p>
+                    <h3>QUANTIDADE DOADA</h3>
+                    <p>Canetas: 10<br> Lápis: 20</p>
+                    <h3>DATA E HORÁRIO ESCOLHIDO</h3>
+                    <p> 12/12/2026 12:12</p>
+                    <h2>COMENTÁRIOS</h2>
+                    <section class="comentario-doador">
+                     <p>Exemplo de Comentário do Doador</p>
+                    </section>
+                  
+              
+
+                </div>
+                  </div>
+               
+
+                <div class="card card-doa-atend">
+                    <h3>Folhas A4</h3>
+                    <p>Autor da Doação: Nome do Doador</p>
+                    <p>Data e Horário Escolhido: 08/08/2026 8:08</p>
+                     <a onclick="abrirPediFolha()" class="btn btn-outline-primary btn-saiba">Mais Informações</a>
+                </div>
+
+                
+                  <div id="modal-pedido-doa-folha" class="pedido-doa-modal">
+                     <div class="modal-conteudo-pedido-doa">
+                    <span class="fechar" onclick="fecharAtenFolha()">&times;</span>
+                    <h2>INFORMAÇÕES DO PEDIDO ATENDIDO</h2>
+                    <h3>NOME DO DOADOR</h3>
+                    <p>Nome do Doador</p>
+                    <h3>MATERIAL DOADO</h3>
+                    <p>Folhas A4</p>
+                    <h3>QUANTIDADE DOADA</h3>
+                    <p>400 Folhas</p>
+                    <h3>DATA E HORÁRIO ESCOLHIDO</h3>
+                    <p>08/08/2026 8:08</p>
+                    <h3>COMENTÁRIOS</h3>
+                    <section class="comentario-doador">
+                     <p>Exemplo de Comentário do Doador</p>
+                    </section>
+                  
+
+            </section>
+         
+            </section>
+      
+        </section>
+    
+        </section>
+
+    </main>
+
+    <script src="scriptcord.js"></script>
+
+
+</body>
+</html>

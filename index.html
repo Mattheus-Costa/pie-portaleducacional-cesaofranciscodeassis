@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESFA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<!--CABEÇALHO DA PÁGINA-->
+    <section class="cabecalho"> 
+      <section class="imagelogo">
+            <img src="img/logo.png" alt="logo">
+      </section>
+
+            <h2>C.E. SÃO FRANCISCO DE ASSIS</h2>
+                <nav>
+                <a href="#" onclick="abrirLogin();return false;" class="btn btn-outline-primary btn-login">Login</a>
+                     <ul>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#doar">Doações</a></li>
+                        <li><a href="#" onclick="abrirModal(); return false;">Sobre a Instituição</a></li>
+                     </ul>
+                </nav>
+
+            <div id="loginmodal" class="modal">
+                <div class="modal-conteudo-login">
+                    <span class="fechar" onclick="fecharLogin()">&times;</span>
+                    <h2>FAÇA SEU LOGIN</h2>
+                    <input id="usuario" type="text" class="input-custom" placeholder="Usuario">
+                    <input id="senha" type="text" class="input-custom" placeholder="Senha">
+                     <a onclick="entrar()" class="btn btn-outline-primary btn-entrar">Entrar</a>
+
+                </div>
+            </div>
+
+ <div id="modal" class="meu-modal">
+  <div class="modal-conteudo">
+    
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h2>APRESENTAÇÃO</h2>
+    
+    <p>O Centro de Apoio à Criança e Adolescente "CENTRO EDUCACIONAL SÃO FRANCISCO DE ASSIS" (CESFA), trata-se de um Projeto Social da Diocese de Caxias MA motivado pelas ações da Pastoral da Criança nos bairros Seriema, São Francisco, Teso Duro e Bacuri. Os anos que antecederam 2008, ano de fundação das instalações físicas do projeto, muitas crianças já eram acompanhadas nos referidos bairros pela Pastoral da Criança, que é um organismo de ação social da Conferência Nacional dos Bispos do Brasil CNBB, vinculada à Comissão Episcopal para o Serviço da Caridade, da Justiça e da Paz, que tem como objetivo a promoção do desenvolvimento integral de crianças entre O e seis anos de idade em seu ambiente familiar e em sua comunidade. A sua atuação tem caráter ecumênico, atendendo pessoas de todos os credos e etnias. Inaugurado em 09/08/2008. Obra realizada com ajuda dos benfeitores italianos na Missão de Dom Frei Luis D'Ándrea (3º Bispo Diocesano de Caxias). O projeto se estendeu e passou a atender adolescentes e mulheres da comunidade</p>
+    <img src="img/modal.jpeg" alt="imagem da instituição">
+    <h2>A PROCURA PELO TERRENO</h2>
+    <p>O sonho de criar um espaço de acolhida e formação para crianças e famílias nasceu a partir de uma conversa entre Dom Frei Luís D’Andrea, então Bispo Diocesano de Caxias, e Maria Júlia, no Centro de Treinamento da Diocese. Na ocasião, Dom Luís manifestou o desejo de, antes de encerrar sua missão pastoral, deixar como legado um lugar dedicado ao cuidado, à educação e à evangelização de crianças e adolescentes, bem como ao fortalecimento das famílias.
+
+A proposta era criar um ambiente onde as crianças pudessem receber reforço escolar, acompanhamento educativo e formação cristã, enquanto os pais e responsáveis também encontrassem oportunidades de crescimento por meio de cursos profissionalizantes e espaços de convivência comunitária.
+
+Durante a busca por um terreno para concretizar esse sonho, foi encontrado um espaço que anteriormente pertencia a uma senhora muito religiosa da comunidade, que mantinha no local uma pequena capela onde costumava rezar o Santo Terço. Após o falecimento da proprietária e com a capelinha já em ruínas, Dom Frei Luís D’Andrea entrou em contato com o proprietário do terreno e conseguiu adquiri-lo para dar início ao projeto.
+
+Em novembro de 2007, Dom Luís esteve no local para realizar um momento de oração e lançar a pedra fundamental da obra. A construção do espaço foi possível graças à generosa colaboração de benfeitores italianos, que apoiaram a iniciativa solidária da Diocese de Caxias voltada ao cuidado das crianças e das famílias em situação de vulnerabilidade.
+
+Assim, em 09 de agosto de 2008, foi inaugurado o Centro Educacional São Francisco de Assis (CESFA), uma obra social da Diocese de Caxias, criada com a missão de promover educação, evangelização, solidariedade e desenvolvimento humano para crianças, adolescentes e suas famílias.</p>
+<img  src="img/terreno.jpeg" alt="imagem da instituição">
+<h2>INAUGURAÇÃO</h2>
+<p>O Centro Educacional São Francisco de Assis foi inaugurado em 09 de agosto de 2008, com o apoio de benfeitores italianos, durante a missão de Dom Frei Luís D’Andrea, 3º Bispo da Diocese de Caxias.
+
+A cerimônia contou com a presença de Dom Luís, que realizou a primeira fala na inauguração, marcando um momento histórico e significativo para o Centro.<br>
+
+<br>Missão:<br>
+
+Desenvolver em crianças e adolescentes a consciência da realidade e de seus direitos, por meio dos princípios cristãos e da cidadania, criando oportunidades de convivência e de atuação positiva na sociedade.<br>
+
+<br>Visão:<br>
+
+Alcançar crianças, adolescentes e a comunidade, contribuindo para a transformação de suas realidades sociais por meio dos valores cristãos, construindo um mundo melhor, alicerçado no amor ao próximo, a exemplo de São Francisco de Assis.<br>
+
+<br>Valores:<br>
+
+Paz, Amor, Perdão, União, Fé, Verdade, Esperança, Alegria e Luz.<br>
+
+<br>Objetivo Geral:<br>
+
+Promover o desenvolvimento humano, social e educacional de crianças, adolescentes e da comunidade em geral, contribuindo para uma vida digna.<br>
+
+<br>Objetivos Específicos:<br>
+
+Oferecer atividades que contribuam para a formação cidadã de crianças e adolescentes entre 2 e 15 anos;<br>
+
+Desenvolver competências humanas, sociais, educacionais e culturais;<br>
+
+Incentivar valores religiosos, éticos e sociais;<br>
+
+Fortalecer a convivência social e o protagonismo infantojuvenil.</p>
+<img  src="img/inauguracao.jpeg" alt="imagem da instituição">
+
+  
+  </div>
+</div>
+    </section>
+      
+    </header>
+    <main>
+
+ <section class="banner">
+
+    <div class="text">
+    <h3> - Obra Social da Diocese de Caxias-MA</h3>
+    <h3> - Atendimento a Crianças, Adolecentes e Comunidade</h3>
+    <h3> - Educação, Paz, Amor, Fé e Esperança</h3>
+    <h2 class="cursive">Senhor, Fazei-Me Instrumento de Vossa Paz.</h2>
+    </div>
+   
+
+ </section>
+
+   
+<!--SEÇÃO DE CURSOS-->
+
+     <section  class="cursos"> 
+        <div class="card card-cursos">
+         <h2 id="cursos" class="titulo">CURSOS</h2>
+         <div class="cards-internos">
+               <div class="card card-curso-interno"> 
+            <img src="img/pizza.jpeg">
+            <h3>Curso de Pizza</h3>
+            <p>Período de Matrículas: <br> 11/02/2026<br>até<br>19/02/2026<br> <br>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+            <a href="#" onclick= "mostrarmatriculapizza();return false;"  class="btn btn-outline-primary btn-matricula">Saiba Mais</a>
+
+        </div>
+
+            <div id="matricula-modal-pizza" class="modal-matricula">
+                <div class="modal-conteudo-matricula">
+                    <span class="fechar" onclick="fecharMatriculaPizza()">&times;</span>
+                    <h2>INFORMAÇÕES DO CURSO</h2>
+                   <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                    <h2>DOCUMENTOS NECESSÁRIOS</h2>
+                    <p>
+                    - Certificado de conclusão do Ensino Médio<br>
+                    - Documento de identificação atualizado<br>
+                    - Histórico escolar do Ensino Médio<br>
+                    - Comprovante de residência atualizado<br>
+                    - Título de eleitor (para maiores de 18 anos)<br>
+                    </p>
+
+                </div>
+            </div>
+
+
+           <div class="card  card-curso-interno"> 
+            <img src="img/panificação.jpeg">
+            <h3> Curso de Panificação</h3>
+            <p>Período de Matrículas: <br> 11/02/2026<br>até<br>19/02/2026<br> <br>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+            <a href="#" onclick="mostrarmatriculapao();return false;"  class="btn btn-outline-primary btn-matricula">Saiba Mais</a>
+
+        </div>
+
+            <div id="matricula-modal-pao" class="modal-matricula">
+              <div class="modal-conteudo-matricula">
+                    <span class="fechar" onclick="fecharMatriculaPao()">&times;</span>
+                    <h2>INFORMAÇÕES DO CURSO</h2>
+                    <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                    <h2>DOCUMENTOS NECESSÁRIOS</h2>
+                    <p>
+                    - Certificado de conclusão do Ensino Médio<br>
+                    - Documento de identificação atualizado<br>
+                    - Histórico escolar do Ensino Médio<br>
+                    - Comprovante de residência atualizado<br>
+                    - Título de eleitor (para maiores de 18 anos)<br>
+                    </p>
+
+                </div>
+            </div>
+
+           <div class="card  card-curso-interno"> 
+            <img src="img/manicure.jpeg">
+            <h3>Curso de Manicure</h3>
+            <p>Período de Matrículas: <br> 11/02/2026<br>até<br>19/02/2026<br> <br>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+            <a href="#" onclick="mostrarmatriculamanicure();return false;" class="btn btn-outline-primary btn-matricula">Saiba Mais</a>
+
+        </div>
+
+        
+            <div id="matricula-modal-manicure" class="modal-matricula">
+                <div class="modal-conteudo-matricula">
+                    <span class="fechar" onclick="fecharMatriculaManicure()">&times;</span>
+                    <h2>INFORMAÇÕES DO CURSO</h2>
+                    <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                    <h2>DOCUMENTOS NECESSÁRIOS</h2>
+                    <p>
+                    - Certificado de conclusão do Ensino Médio<br>
+                    - Documento de identificação atualizado<br>
+                    - Histórico escolar do Ensino Médio<br>
+                    - Comprovante de residência atualizado<br>
+                    - Título de eleitor (para maiores de 18 anos)<br>
+                    </p>
+
+
+                </div>
+        </div>
+        
+         </div>
+          
+            </div>
+
+    
+     
+     </section>
+<!---NOTICIAS E DOAÇÕES-->    
+<section class="container-grid">
+
+    <section id="noticias" class="area-noticias">
+        <div class="card card-noticias">
+             <h2 class="titulo-noticia">NOTÍCIAS</h2>
+
+            <section class="content-cards">
+                 <div class="card card-noticia-interna">
+                     <img src="img/bijuteria.jpeg"  class="card-img-top" alt="Foto de Sala de Aula de Bijuteria">
+                         <div class="card-body">
+                            <h5 class="card-title">Foi Dado Início no Curso de Bijuteria</h5>
+                            <p class="card-text">Exemplo de Noticia do Ambiente Escolar.</p>
+                            <a href="#"  onclick="mostrarnoticiabiju();return false;" class="btn btn-outline-primary btn-saiba">Saiba Mais</a>
+                        </div>
+                 </div>
+
+            <div id="noticia-modal-biju" class="modal-noticia">
+              <div class="modal-conteudo-noticia">
+                    <span class="fechar" onclick="fecharNoticiaBiju()">&times;</span>
+                     
+                    <h2>FOI DADO INÍCIO NO CURSO DE BIJUTERIA</h2>
+                    <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                    <img src="img/bijuteria.jpeg"  class="card-img-noticia-modal" alt="Foto de Sala de Aula de Bijuteria">
+
+                </div>
+            </div>
+            <div class="card card-noticia-interna">
+                     <img src="img/premio.jpeg"  class="card-img-top" alt="C.E. São Francisco de Assis no Prêmio Destaque">
+                         <div class="card-body">
+                            <h5 class="card-title">Vote no C.E. São Francisco no 5º Prêmio Destaque</h5>
+                            <p class="card-text">Exemplo de Noticia do Ambiente Escolar.</p>
+                            <a href="#"  onclick="mostrarnoticiapremio();return false;"class="btn btn-outline-primary btn-saiba">Saiba Mais</a>
+                         </div>
+             </div>
+             <div id="noticia-modal-premio" class="modal-noticia">
+              <div class="modal-conteudo-noticia">
+                    <span class="fechar-premio" onclick="fecharNoticiaPremio()">&times;</span>
+                    <h2>VOTE NO C.E. SÃO FRANCISCO NO 5º PRÊMIO DESTAQUE</h2>
+                    <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                    <img src="img/premio.jpeg"  class="card-img-noticia-modal" alt="C.E. São Francisco de Assis no Prêmio Destaque">
+                </div>
+            </div>
+
+            <div class="card card-noticia-interna">
+                     <img src="img/retiro.jpeg"  class="card-img-top" alt="Panfleto do Retiro">
+                         <div class="card-body">
+                            <h5 class="card-title">Amanhã Começa Retiro Aviva-Nos Senhor</h5>
+                            <p class="card-text">Exemplo de Noticia do Ambiente Escolar.</p>
+                            <a href="#"  onclick="mostrarnoticiaretiro();return false;" class="btn btn-outline-primary btn-saiba">Saiba Mais</a>
+                         </div>
+             </div>
+       <div id="noticia-modal-retiro" class="modal-noticia">
+              <div class="modal-conteudo-noticia">
+                    <span class="fechar" onclick="fecharNoticiaRetiro()">&times;</span>
+                    <h2>AMANHÃ COMEÇA O RETIRO AVIVA-NOS SENHOR</h2>
+                    <p>Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição, Exemplo de Descrição de Curso Ofertado Pela Instiuição.</p>
+                     <img src="img/retirocompleto.jpeg"  class="card-img-noticia-modal" alt="Panfleto do Retiro">
+                </div>
+            </div>
+             </section>
+        </div>
+           
+
+
+
+    </section>
+
+    
+    <section id="doar" class="doacoes">   
+        <div class="card card-doacoes">
+             <h2 class="titulo">DOAÇÕES</h2>
+         <section  class="lista-doacoes">
+            <div class="card mb-3">
+                <div class="card-body" style="width: 18rem;">
+                     <h5 class="card-title">Canetas e Lápis</h5>
+                    <p>07/03/2026: Exemplo de Descrição de Materiais Solicitados Para Serem Doados Para a Instituição. </p>
+                      <a onclick="MostrarDoaCaneta()" class="btn btn-outline-primary btn-doar">Doar</a>
+                </div>        
+            </div> 
+
+              <div id="doa-modal-lapis" class="doacao-modal">
+                <div class="modal-conteudo-doacao">
+                    <span class="fechar" onclick="fecharLapis()">&times;</span>
+                    <h2>AGENDE SEU HORÁRIO E REALIZE SUA DOAÇÃO</h2>
+                    <h2>Nome do Doador</h2>
+                    <p>(Deixe Este Campo em Branco se Não Preferir se Identificar)</p>
+                    <input id="usuario-lapis" class="input-custom" type="text" placeholder="Anônimo"> 
+                    <h2>Quantidade de Materiais a Serem Doados</h2>
+                    <input id="quantidade-lapis" class="input-custom" type="text" placeholder="Quantidade">
+                  
+                      <div class="selecao">
+                              <h2>Horário</h2>
+                              <select id="horario">
+                        <option>9:00</option>
+                        <option>9:30</option>
+                        <option>10:00</option>
+                        <option>10:30</option>
+                        <option>11:00</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option>15:30</option>
+                    </select>
+                    <h2>Comentários (Opcional)</h2>
+                     <input id="comentario" class="input-custom" type="text" placeholder="Comentários">
+                     <a  class="btn btn-outline-primary btn-enviar">Enviar</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body" style="width: 18rem;">
+                     <h5 class="card-title">Folhas A4</h5>
+                    <p>08/03/2026: Exemplo de Descrição de Materiais Solicitados Para Serem Doados Para a Instituição. </p>
+                      <a onclick="MostrarDoaFolha()"  class="btn btn-outline-primary btn-doar">Doar</a>
+                </div>
+            </div> 
+
+              <div id="doa-modal-folha" class="doacao-modal">
+                <div class="modal-conteudo-doacao">
+                    <span class="fechar" onclick="fecharFolha()">&times;</span>
+                    <h2>AGENDE SEU HORÁRIO E REALIZE SUA DOAÇÃO</h2>
+                    <h2>Nome do Doador</h2>
+                    <p>(Deixe Este Campo em Branco se Não Preferir se Identificar)</p>
+                    <input id="usuario-folha" class="input-custom" type="text" placeholder="Anônimo"> 
+                     <h2>Quantidade de Materiais a Serem Doados</h2>
+                    <input id="quantidade-folha" class="input-custom" type="text" placeholder="Quantidade">
+                   
+                     <div class="selecao">
+                             <h2>Horário</h2>
+                              <select id="horario">
+                        <option>9:00</option>
+                        <option>9:30</option>
+                        <option>10:00</option>
+                        <option>10:30</option>
+                        <option>11:00</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option>15:30</option>
+                    </select>
+                     <h2>Comentários (Opcional)</h2>
+                     <input id="comentario" class="input-custom" type="text" placeholder="Comentários">
+                     <a  class="btn btn-outline-primary btn-enviar">Enviar</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body" style="width: 18rem;">
+                     <h5 class="card-title">Carteiras</h5>
+                    <p>09/04/2026:  Exemplo de Descrição de Materiais Solicitados Para Serem Doados Para a Instituição.</p>
+                      <a onclick="MostrarDoaCart()"  class="btn btn-outline-primary btn-doar">Doar</a>
+                </div>
+            </div> 
+
+              <div id="doa-modal-cart" class="doacao-modal">
+                <div class="modal-conteudo-doacao">
+                    <span class="fechar" onclick="fecharCart()">&times;</span>
+                    <h2>AGENDE SEU HORÁRIO E REALIZE SUA DOAÇÃO</h2>
+                    <h2>Nome do Doador</h2>
+                    <p>(Deixe Este Campo em Branco se Não Preferir se Identificar)</p>
+                    <input id="usuario-cart" class="input-custom" type="text" placeholder="Anônimo"> 
+                      <h2>Quantidade de Materiais a Serem Doados</h2>
+                    <input id="quantidade-cart" class="input-custom" type="text" placeholder="Quantidade">
+                  
+                    <div class="selecao">
+                          <h2>Horário</h2>
+                              <select id="horario">
+                        <option>9:00</option>
+                        <option>9:30</option>
+                        <option>10:00</option>
+                        <option>10:30</option>
+                        <option>11:00</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option>15:30</option>
+                    </select>
+                    <h2>Comentários (Opcional)</h2>
+                     <input id="comentario" class="input-custom" type="text" placeholder="Comentários">
+                     <a  class="btn btn-outline-primary btn-enviar">Enviar</a>
+
+                    </div>
+              
+                </div>
+            </div>
+      
+         
+     </section>
+        </div>
+        
+
+
+ </section>
+        
+    </main>
+    <!--RODAPÉ-->
+    <footer>
+
+        <div class="item-footer-c">
+
+             <img src="img/telefone.png" class="telefone" alt="telefone">
+             <h4 class = "contato">+(99) 99 99999-9999</h4>
+
+        </div>
+
+     <div class="item-footer">
+        <img src="img/instagram.png" class="instagram" alt="instagram">
+        <h4 class = "rede1"> @c.e.saofranciscodeassis</h4>   
+     </div>
+
+      <div class="item-footer">
+         <img src="img/youtube.png" class= "youtube" alt="youtube">
+         <h4 class = "rede2">@CESaoFranciscoDeAssis</h4>
+      </div>
+       
+    </footer>
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>

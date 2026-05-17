@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+ body{
+    overflow-x: hidden;
+     background-color:  rgb(251, 241, 229);
+
+ }
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.4px solid rgb(255, 255, 255);
+    
+}
+
+.cabecalho h2 {
+    margin-top: 6px;
+    position: absolute;
+    left: 7.5%;
+   
+}
+
+.imagelogo img{
+    width: 67px;
+    margin-left: 15px;
+     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn.btn-voltar{
+
+    margin-right: 20px;
+    width: 170px;
+    color:  rgb(255, 255, 255);
+    border-color:  rgb(255, 255, 255);
+
+}
+
+
+.btn.btn-voltar:hover{
+     background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: brown;
+}
+
+
+nav ul {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+.container-grid{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-resposta{
+    color: brown;
+    border-color: brown;
+
+}
+
+.btn.btn-resposta:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+
+.ver-postagens{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+ .titulo {      
+
+
+    margin-top: 60px;
+    margin-bottom: 36px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+
+
+}
+
+ .titulo-postagem {      
+
+
+    margin-top: 60px;
+    margin-bottom: 6px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+
+
+}
+
+.card-nova-postagem{
+ display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  margin-top: 60px;
+  gap: 50px;
+}
+
+.card-nova-postagem{
+    padding: 40px;
+
+     border: 1px solid brown;
+}
+.card-ver-postagens{
+    padding: 40px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid brown;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+ .card-postagem{
+     padding: 20px;
+    width: 80%;
+     border: 1px solid brown;
+     transition: 0.5s ease-in;
+     margin-left: 65px;
+}
+  .card-postagem:hover{
+    transform: scale(1.05);
+}
+
+.card-adc{
+
+  display: flex;             
+  justify-content: center;   
+      height: 300px; 
+  align-items: center;
+  background-color:  rgb(251, 241, 229);
+   border: 2px dashed brown;
+     transition: 0.5s ease-in;
+}
+
+.card-postagem{
+    background-color:  rgb(251, 241, 229);
+}
+
+ .card-adc:hover{
+    transform: scale(1.05);
+}
+.btn-adc{
+    color: brown;
+    border-color: brown;
+    border-radius: 50%;
+    width: 10%;
+    height: 60px;
+    display: flex !important;
+    justify-content: center;
+    align-items:  center;
+}
+
+.btn.btn-adc:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+
+.enviar-atv-modal{
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+     background: rgba(0,0,0,0.6);
+     z-index: 999;
+         justify-content: center;
+    align-items: center;
+}
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99999;
+  color: brown;
+
+}
+
+ .modal-conteudo-enviar-atv{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  text-align: center;
+  width: 80%;      
+   border: 2.5px solid brown;
+  height: 100%;
+  max-height: 85vh;
+  overflow-y: auto;  
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+    }
+
+    .input-custom-prof{
+        padding: 15px 20px;
+        border: 2px solid brown;
+        border-radius: 25px;
+         outline: none;
+    }
+.input-custom-prof:focus {
+  border-color: #ffbf76;
+}
+
+    .modal-conteudo-enviar-atv h2{
+     margin-bottom: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    left: 1%;
+    color: brown;
+    }
+
+    .btn-enviar-atv{
+    width: 170px;
+    color:  brown;
+    border-color: brown
+    }
+.btn.btn-enviar-atv:hover{
+     background-color: brown;
+    border-color: brown;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    
+        .fechar{
+        font-size: 30px;
+    }
+
+         .container-grid{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .cabecalho h2 {
+    margin-top: 9px;
+    position: relative;
+    left: 1%;
+
+}
+.card-postagem{
+    margin-left: 5px;
+    width: 100%;
+}
+.btn.btn-voltar{
+    margin: 8px 20px;
+    width: 120px;
+}
+.btn-adc{
+
+height: 15%;
+width: 15%;
+}
+
+}

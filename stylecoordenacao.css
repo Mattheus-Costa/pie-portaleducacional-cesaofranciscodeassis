@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+IE&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ body{
+    overflow-x: hidden;
+ }
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 241, 229);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.4px solid rgb(255, 255, 255);
+    background-color: brown;
+}
+
+.cabecalho h2 {
+    margin-top: 6px;
+    position: absolute;
+    left: 7.5%;
+   
+}
+
+.imagelogo img{
+    width: 67px;
+    margin-left: 15px;
+        margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-voltar{
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    width: 170px;
+}
+
+.btn.btn-voltar:hover{
+    background-color:  rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: brown;
+
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    
+}
+
+.adc-noticia{
+    margin-left: 20px;
+}
+.adc-doacao{
+    margin-bottom: 20px;
+}
+.btn-adc{
+    color: brown;
+    border-color: brown;
+    border-radius: 50%;
+    width: 7%;
+    height: 40px;
+    align-self: center;
+     display: flex !important;
+    justify-content: center;
+    align-items:  center;
+}
+.btn-adc-news{
+    color: brown;
+    border-color: brown;
+    border-radius: 50%;
+    width: 8%;
+    height: 40px;
+    align-self: center;
+     display: flex !important;
+    justify-content: center;
+    align-items:  center;
+}
+
+.btn.btn-adc:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+
+.btn.btn-adc-news:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+.card-criar-news{
+    margin-top: 40px;
+    padding: 20px;
+    height: 400px;
+
+}
+
+.card-criar-doa{
+    margin-top: 40px;
+    padding: 20px;
+    height: 400px;
+    margin-bottom: 22px;
+
+
+}
+.card-criar-curso{
+    margin-top: 40px;
+    padding: 20px;
+    height: 350px;
+
+}
+.card.card-news{
+    margin-top: 50px;
+    padding: 15px;
+
+    
+}
+
+.card.card-adc{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px dashed brown;
+    background-color:  rgb(251, 241, 229);
+
+    height: 300px;
+     transition: 0.5s ease-in;
+}
+
+ .card-adc:hover{
+    transform: scale(1.05);
+}
+
+.card.card-adc-news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed brown;
+    background-color:  rgb(251, 241, 229);
+    transition: 0.5s ease-in;
+    padding: 20px;
+     height: 300px;
+}
+
+
+
+
+ .card-adc-news:hover{
+    transform: scale(1.05);
+}
+.card.card-adc-curso{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    height: 300px;
+    border: 2px dashed brown;
+    background-color:  rgb(251, 241, 229);
+    transition: 0.5s ease-in;
+}
+
+ .card-adc-curso:hover{
+    transform: scale(1.05);
+}
+.btn-adc-curso{
+    color: brown;
+    border-color: brown;
+    border-radius: 50%;
+    width: 8%;
+    height: 40px;
+    align-self: center;
+     display: flex !important;
+    justify-content: center;
+    align-items:  center;
+
+}
+.btn.btn-adc-curso:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1px;
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+
+.card{
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    align-items: center;
+    border: 1px solid brown;
+  
+    
+
+}
+.card.card-doa-atend{
+    background-color:  rgb(251, 241, 229);
+
+    transition: 0.5s ease-in;
+}
+
+ .card.card-doa-atend:hover{
+    transform: scale(1.05);
+}
+
+.card.card-adc{
+    border: 2px dashed brown;
+}
+
+
+.card h3{
+    color: brown;
+}
+
+ .titulo {      
+
+
+    margin-top: 50px;
+    margin-bottom: 36px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+
+}
+
+.btn-saiba{
+    color: brown;
+    border-color: brown;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.btn.btn-saiba:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+.btn-enviar-not{
+    color: brown;
+    border-color: brown;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.btn.btn-enviar-not:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+
+.btn-enviar-doa{
+    color: brown;
+    border-color: brown;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.btn.btn-enviar-doa:hover{
+    background-color:  brown;
+    border-color: brown;
+    color: white;
+
+}
+
+.enviar-not-modal{
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+     background: rgba(0,0,0,0.6);
+     z-index: 999;
+         justify-content: center;
+    align-items: center;
+}
+
+.enviar-curso-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+     z-index: 999;
+     display: none;
+    left: 0;
+     top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo-enviar-curso{
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: center;
+    width: 80%;      
+    border: 2px solid brown;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    color: brown;
+}
+
+
+
+.enviar-doa-modal{
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+     background: rgba(0,0,0,0.6);
+     z-index: 999;
+     justify-content: center;
+    align-items: center;
+
+}
+
+.pedido-doa-modal{
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: rgba(0,0,0,0.6);
+     z-index: 999;
+     justify-content: center;
+    align-items: center;
+
+}
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99999;
+  color: brown;
+
+}
+
+.fechar-doa {
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99999;
+  color: brown;
+
+}
+
+.fechar-curso {
+  position: relative;
+  font-size: 30px;
+  left: 45%;
+  cursor: pointer;
+  z-index: 99999;
+  color: brown;
+
+}
+
+ .modal-conteudo-enviar-not{
+ background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  text-align: center;
+  width: 80%;      
+  border: 2px solid brown;
+  height: 100%;
+  max-height: 85vh;
+  overflow-y: auto;  
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+    }
+
+ .modal-conteudo-enviar-doa{
+ background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  text-align: center;
+  width: 80%;      
+   border: 2px solid brown;
+  height: 100%;
+  max-height: 85vh;
+  overflow-y: auto;  
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+    }
+
+    .modal-conteudo-pedido-doa{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: center;
+    width: 80%;      
+     border: 2px solid brown;
+    height: 100%;
+    max-height: 85vh;
+    overflow-y: auto;  
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+
+    }
+
+    .modal-conteudo-pedido-doa h3,  .modal-conteudo-pedido-doa h2{
+
+         z-index: 2;
+    position: relative;
+
+    color: brown;
+
+    }
+
+    .comentario-doador{
+        border: 1px solid brown;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+  
+    }
+
+
+
+    .modal-conteudo-enviar-not h2{
+     margin-bottom: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    left: 1%;
+    color: brown;
+    }
+    .modal-conteudo-enviar-doa h2{
+     margin-bottom: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    left: 1%;
+    color: brown;
+    }
+
+ .input-custom-cord{
+  padding: 10px 15px;
+  border: 2px solid brown;
+  border-radius: 25px; 
+  outline: none; 
+  font-size: 16px;
+    }
+
+
+    
+ .input-custom-cord-desc{
+  padding: 10px 15px;
+  width: 80%;
+
+  border: 2px solid brown;
+  border-radius: 25px; 
+  outline: none; 
+  font-size: 16px;
+    }
+
+ .input-custom-cord:focus {
+  border-color: #ffbf76;
+}
+
+
+ .input-custom-cord-desc:focus {
+  border-color: #ffbf76;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+
+    .fechar{
+        font-size: 30px;
+        right: 10px;
+    }
+ 
+
+    .modal-conteudo-enviar-not{
+        width: 90%;
+        height: 80%;
+    }
+
+.adc-noticia{
+    margin: 0;
+}
+ 
+.fechar-doa{
+    top: -6px;
+    right: 4px;
+
+}
+
+.coluna1{
+ margin: 0;
+}
+.modal-conteudo-enviar-curso{
+    width: 90%;
+}
+         .container-grid{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .cabecalho h2 {
+    margin-top: 9px;
+    position: relative;
+    left: 1%;
+
+}
+.adc-doacao{
+  margin: 0;
+}
+
+
+
+.btn.btn-voltar{
+    margin: 8px 20px;
+    width: 120px;
+}
+
+.card-adc-news{
+    height: 300px;
+
+}
+.card-adc{
+    height: 150px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.btn-adc{
+    height: 40px;
+    width: 10%;
+}
+}
